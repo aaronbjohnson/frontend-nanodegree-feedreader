@@ -1,0 +1,4 @@
+References:
+
+1. For looping in Jasmine.js http://discussions.udacity.com/t/looping-in-jasmine
+   -not-sure-how-it-works/4775/2
