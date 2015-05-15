@@ -1,20 +1,24 @@
-/* feedreader.js
+/**
+ * feedreader.js
  *
  * This is the spec file that Jasmine will read and contains
  * all of the tests that will be run against your application.
  */
 
-/* We're placing all of our tests within the $() function,
+/**
+ * We're placing all of our tests within the $() function,
  * since some of these tests may require DOM elements. We want
  * to ensure they don't run until the DOM is ready.
  */
 $(function() {
-    /* This is our first test suite - a test suite just contains
-    * a related set of tests. This suite is all about the RSS
-    * feeds definitions, the allFeeds variable in our application.
-    */
+    /**
+     * This is our first test suite - a test suite just contains
+     * a related set of tests. This suite is all about the RSS
+     * feeds definitions, the allFeeds variable in our application.
+     */
     describe('RSS Feeds', function() {
-        /* This is our first test - it tests to make sure that the
+        /** 
+         * This is our first test - it tests to make sure that the
          * allFeeds variable has been defined and that it is not
          * empty. Experiment with this before you get started on
          * the rest of this project. What happens when you change
@@ -27,7 +31,8 @@ $(function() {
         });
 
 
-        /* TODO: Write a test that loops through each feed
+        /**
+         * This is a test that loops through each feed
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
@@ -39,14 +44,23 @@ $(function() {
          })
 
 
-        /* TODO: Write a test that loops through each feed
+        /**
+         * This is a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+         it('each name is defined', function() {
+            allFeeds.forEach(function(feed) {
+                expect(feed.name).toBeDefined();
+                expect(feed.name).not.toBeFalsy();
+            });
+         })
     });
 
 
     /* TODO: Write a new test suite named "The menu" */
+
+    describe('The menu', function() {
 
         /* TODO: Write a test that ensures the menu element is
          * hidden by default. You'll have to analyze the HTML and
@@ -59,6 +73,9 @@ $(function() {
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
+
+    });
+
 
     /* TODO: Write a new test suite named "Initial Entries" */
 
