@@ -34,6 +34,7 @@ $(function() {
          it('each URL is defined', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.url).toBeDefined();
+                expect(feed.url).not.toBeFalsy();
             });
          })
 
