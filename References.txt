@@ -2,3 +2,6 @@ References:
 
 1. For looping in Jasmine.js http://discussions.udacity.com/t/looping-in-jasmine
    -not-sure-how-it-works/4775/2
+
+2. For checking to see if strings are empty http://www.htmlgoodies.com/beyond/
+   javascript/testing-javascript-using-the-jasmine-framework.html
