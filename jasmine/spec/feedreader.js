@@ -90,6 +90,9 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
+         // Empty feeds before calling beforeEach function.
+         $( ".feed" ).empty();
+
          beforeEach(function(done) {
             loadFeed(0, done);
          });
@@ -109,15 +112,20 @@ $(function() {
          * A test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          */
+         $( ".feed" ).empty();
          beforeEach(function(done) {
-            initialState = $('.feed a').children('.entry');
-            loadFeed(0, done);
+            window.loadFeed(0, function() {
+                initialState = $('.feed').html();
+                done();
+            });
          });
 
          it('content actually changes', function(done) {
-            finalState = $('.feed a').children('.entry');
-            expect(initialState).not.toBe(finalState);
-            done();
+            window.loadFeed(1, function() {
+                finalState = $('.feed').html();
+                expect(finalState !== initialState).toBeTruthy();
+                done();
+            });
          });
     });
 }());
