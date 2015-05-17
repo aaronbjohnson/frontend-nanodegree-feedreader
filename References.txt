@@ -5,3 +5,9 @@ References:
 
 2. For checking to see if strings are empty http://www.htmlgoodies.com/beyond/
    javascript/testing-javascript-using-the-jasmine-framework.html
+
+3. For usng Jamine's asynchronous specs https://github.com/jasmine/jasmine/
+   issues/526
+
+4. Repositories referenced: https://github.com/bahalps/frontend-nanodegree-
+   feedreader and https://github.com/kevdonk/frontend-nanodegree-feedreader
