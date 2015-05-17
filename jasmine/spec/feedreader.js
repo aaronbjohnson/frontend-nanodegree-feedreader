@@ -72,7 +72,6 @@ $(function() {
           it('changes visibility when the menu icon is clicked', function() {
             var menuElement = $('.menu-icon-link');
 
-            // Do we need .trigger here?
             menuElement.trigger('click');
             expect($('body').hasClass('menu-hidden')).toBe(false);
 
