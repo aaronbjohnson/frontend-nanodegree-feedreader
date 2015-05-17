@@ -1,4 +1,4 @@
-Udacity Nanodegree Neighborhood Map Project
+Udacity Nanodegree Feed Reader Project
 ===========================================
 To view this site, simply click on the following link:
 ------------------------------------------------------
