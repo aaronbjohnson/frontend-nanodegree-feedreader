@@ -8,7 +8,7 @@ http://aj65461.github.io/frontend-nanodegree-feedreader/
 
 In this project I was given a web-based application that read RSS feeds. The
 goal was to use Jasmine to write test suites that would test the functionality
-of the application. The requirments were to:
+of the application. The requirements were to:
 
 1. Write a test that loops through each feed in the allFeeds object and ensures
    it has a URL defined and that the URL is not empty.
