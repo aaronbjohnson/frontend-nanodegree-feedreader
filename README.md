@@ -2,7 +2,7 @@ Udacity Nanodegree Feed Reader Project
 ===========================================
 To view this site, simply click on the following link:
 ------------------------------------------------------
-http://aj65461.github.io/frontend-nanodegree-feedreader/
+http://aaronbjohnson.github.io/frontend-nanodegree-feedreader/
 
 ### Project Goals
 
